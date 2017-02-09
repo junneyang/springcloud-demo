@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.xcloud.hello.controller.HelloControllerTest" time="0.052" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/opt/golang/jdk1.8.0_111/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/opt/java/workspace/springboot"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/opt/java/workspace/springboot"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/opt/golang/jdk1.8.0_111/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/opt/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value=":/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.16.0-30-generic"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="root"/>
+    <property name="java.class.path" value="/opt/java/maven/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/opt/golang/jdk1.8.0_111/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/opt/golang/jdk1.8.0_111/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/opt/golang/jdk1.8.0_111/jre/lib/resources.jar:/opt/golang/jdk1.8.0_111/jre/lib/rt.jar:/opt/golang/jdk1.8.0_111/jre/lib/sunrsasign.jar:/opt/golang/jdk1.8.0_111/jre/lib/jsse.jar:/opt/golang/jdk1.8.0_111/jre/lib/jce.jar:/opt/golang/jdk1.8.0_111/jre/lib/charsets.jar:/opt/golang/jdk1.8.0_111/jre/lib/jfr.jar:/opt/golang/jdk1.8.0_111/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/opt/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="initializationError" classname="com.xcloud.hello.controller.HelloControllerTest" time="0.052">
+    <error message="Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+	at org.springframework.util.Assert.state(Assert.java:392)
+	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(SpringBootTestContextBootstrapper.java:173)
+	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.processMergedContextConfiguration(SpringBootTestContextBootstrapper.java:133)
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:409)
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildDefaultMergedContextConfiguration(AbstractTestContextBootstrapper.java:323)
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:277)
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildTestContext(AbstractTestContextBootstrapper.java:112)
+	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildTestContext(SpringBootTestContextBootstrapper.java:78)
+	at org.springframework.test.context.TestContextManager.<init>(TestContextManager.java:120)
+	at org.springframework.test.context.TestContextManager.<init>(TestContextManager.java:105)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTestContextManager(SpringJUnit4ClassRunner.java:152)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.<init>(SpringJUnit4ClassRunner.java:143)
+	at org.springframework.test.context.junit4.SpringRunner.<init>(SpringRunner.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]></error>
+    <system-out><![CDATA[16:01:48.628 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.xcloud.hello.controller.HelloControllerTest]
+16:01:48.633 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:01:48.638 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:01:48.655 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.xcloud.hello.controller.HelloControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:01:48.677 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.xcloud.hello.controller.HelloControllerTest], using SpringBootContextLoader
+16:01:48.688 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.xcloud.hello.controller.HelloControllerTest]: class path resource [com/xcloud/hello/controller/HelloControllerTest-context.xml] does not exist
+16:01:48.691 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.xcloud.hello.controller.HelloControllerTest]: class path resource [com/xcloud/hello/controller/HelloControllerTestContext.groovy] does not exist
+16:01:48.691 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.xcloud.hello.controller.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:01:48.693 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.xcloud.hello.controller.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:01:48.761 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.xcloud.hello.controller.HelloControllerTest]
+16:01:48.805 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+16:01:48.806 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+16:01:48.806 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+16:01:48.817 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/xcloud/hello/controller/] to resources [URL [file:/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/controller/], URL [file:/opt/java/workspace/springboot/target/classes/com/xcloud/hello/controller/]]
+16:01:48.818 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/controller]
+16:01:48.818 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/controller] for files matching pattern [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/controller/*.class]
+16:01:48.821 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/classes/com/xcloud/hello/controller]
+16:01:48.822 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/classes/com/xcloud/hello/controller] for files matching pattern [/opt/java/workspace/springboot/target/classes/com/xcloud/hello/controller/*.class]
+16:01:48.822 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/xcloud/hello/controller/*.class] to resources [file [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/controller/HelloControllerIT.class], file [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/controller/HelloControllerTest.class]]
+16:01:48.841 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/xcloud/hello/] to resources [URL [file:/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/], URL [file:/opt/java/workspace/springboot/target/classes/com/xcloud/hello/]]
+16:01:48.841 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello]
+16:01:48.841 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello] for files matching pattern [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/*.class]
+16:01:48.842 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/classes/com/xcloud/hello]
+16:01:48.842 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/classes/com/xcloud/hello] for files matching pattern [/opt/java/workspace/springboot/target/classes/com/xcloud/hello/*.class]
+16:01:48.842 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/xcloud/hello/*.class] to resources []
+16:01:48.842 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/xcloud/] to resources [URL [file:/opt/java/workspace/springboot/target/test-classes/com/xcloud/], URL [file:/opt/java/workspace/springboot/target/classes/com/xcloud/]]
+16:01:48.842 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/test-classes/com/xcloud]
+16:01:48.842 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/test-classes/com/xcloud] for files matching pattern [/opt/java/workspace/springboot/target/test-classes/com/xcloud/*.class]
+16:01:48.843 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/classes/com/xcloud]
+16:01:48.843 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/classes/com/xcloud] for files matching pattern [/opt/java/workspace/springboot/target/classes/com/xcloud/*.class]
+16:01:48.843 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/xcloud/*.class] to resources []
+16:01:48.844 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/] to resources [URL [file:/opt/java/workspace/springboot/target/test-classes/com/], URL [file:/opt/java/workspace/springboot/target/classes/com/], URL [jar:file:/opt/java/repository/maven/com/fasterxml/classmate/1.3.3/classmate-1.3.3.jar!/com/], URL [jar:file:/opt/java/repository/maven/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar!/com/], URL [jar:file:/opt/java/repository/maven/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.jar!/com/], URL [jar:file:/opt/java/repository/maven/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.jar!/com/], URL [jar:file:/opt/java/repository/maven/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar!/com/]]
+16:01:48.844 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/test-classes/com]
+16:01:48.844 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/test-classes/com] for files matching pattern [/opt/java/workspace/springboot/target/test-classes/com/*.class]
+16:01:48.844 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/classes/com]
+16:01:48.844 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/classes/com] for files matching pattern [/opt/java/workspace/springboot/target/classes/com/*.class]
+16:01:48.845 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in jar file [file:/opt/java/repository/maven/com/fasterxml/classmate/1.3.3/classmate-1.3.3.jar]
+16:01:48.846 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in jar file [file:/opt/java/repository/maven/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar]
+16:01:48.867 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in jar file [file:/opt/java/repository/maven/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.jar]
+16:01:48.867 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in jar file [file:/opt/java/repository/maven/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.jar]
+16:01:48.872 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in jar file [file:/opt/java/repository/maven/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar]
+16:01:48.873 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/*.class] to resources []
+16:01:48.888 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.xcloud.hello.controller.HelloControllerTest]
+16:01:48.889 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:01:48.889 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:01:48.890 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.xcloud.hello.controller.HelloControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:01:48.891 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.xcloud.hello.controller.HelloControllerTest], using SpringBootContextLoader
+16:01:48.892 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.xcloud.hello.controller.HelloControllerTest]: class path resource [com/xcloud/hello/controller/HelloControllerTest-context.xml] does not exist
+16:01:48.892 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.xcloud.hello.controller.HelloControllerTest]: class path resource [com/xcloud/hello/controller/HelloControllerTestContext.groovy] does not exist
+16:01:48.892 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.xcloud.hello.controller.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:01:48.892 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.xcloud.hello.controller.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:01:48.897 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.xcloud.hello.controller.HelloControllerTest]
+16:01:48.898 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+16:01:48.899 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+16:01:48.900 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+16:01:48.901 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/xcloud/hello/controller/] to resources [URL [file:/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/controller/], URL [file:/opt/java/workspace/springboot/target/classes/com/xcloud/hello/controller/]]
+16:01:48.901 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/controller]
+16:01:48.901 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/controller] for files matching pattern [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/controller/*.class]
+16:01:48.902 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/classes/com/xcloud/hello/controller]
+16:01:48.902 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/classes/com/xcloud/hello/controller] for files matching pattern [/opt/java/workspace/springboot/target/classes/com/xcloud/hello/controller/*.class]
+16:01:48.902 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/xcloud/hello/controller/*.class] to resources [file [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/controller/HelloControllerIT.class], file [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/controller/HelloControllerTest.class]]
+16:01:48.903 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/xcloud/hello/] to resources [URL [file:/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/], URL [file:/opt/java/workspace/springboot/target/classes/com/xcloud/hello/]]
+16:01:48.903 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello]
+16:01:48.903 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello] for files matching pattern [/opt/java/workspace/springboot/target/test-classes/com/xcloud/hello/*.class]
+16:01:48.904 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/classes/com/xcloud/hello]
+16:01:48.904 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/classes/com/xcloud/hello] for files matching pattern [/opt/java/workspace/springboot/target/classes/com/xcloud/hello/*.class]
+16:01:48.904 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/xcloud/hello/*.class] to resources []
+16:01:48.904 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/xcloud/] to resources [URL [file:/opt/java/workspace/springboot/target/test-classes/com/xcloud/], URL [file:/opt/java/workspace/springboot/target/classes/com/xcloud/]]
+16:01:48.905 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/test-classes/com/xcloud]
+16:01:48.905 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/test-classes/com/xcloud] for files matching pattern [/opt/java/workspace/springboot/target/test-classes/com/xcloud/*.class]
+16:01:48.905 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/classes/com/xcloud]
+16:01:48.905 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/classes/com/xcloud] for files matching pattern [/opt/java/workspace/springboot/target/classes/com/xcloud/*.class]
+16:01:48.905 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/xcloud/*.class] to resources []
+16:01:48.906 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/] to resources [URL [file:/opt/java/workspace/springboot/target/test-classes/com/], URL [file:/opt/java/workspace/springboot/target/classes/com/], URL [jar:file:/opt/java/repository/maven/com/fasterxml/classmate/1.3.3/classmate-1.3.3.jar!/com/], URL [jar:file:/opt/java/repository/maven/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar!/com/], URL [jar:file:/opt/java/repository/maven/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.jar!/com/], URL [jar:file:/opt/java/repository/maven/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.jar!/com/], URL [jar:file:/opt/java/repository/maven/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar!/com/]]
+16:01:48.906 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/test-classes/com]
+16:01:48.906 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/test-classes/com] for files matching pattern [/opt/java/workspace/springboot/target/test-classes/com/*.class]
+16:01:48.907 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/opt/java/workspace/springboot/target/classes/com]
+16:01:48.907 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/opt/java/workspace/springboot/target/classes/com] for files matching pattern [/opt/java/workspace/springboot/target/classes/com/*.class]
+16:01:48.907 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in jar file [file:/opt/java/repository/maven/com/fasterxml/classmate/1.3.3/classmate-1.3.3.jar]
+16:01:48.907 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in jar file [file:/opt/java/repository/maven/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar]
+16:01:48.910 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in jar file [file:/opt/java/repository/maven/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.jar]
+16:01:48.910 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in jar file [file:/opt/java/repository/maven/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.jar]
+16:01:48.911 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in jar file [file:/opt/java/repository/maven/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar]
+16:01:48.912 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/*.class] to resources []
+]]></system-out>
+  </testcase>
+</testsuite>

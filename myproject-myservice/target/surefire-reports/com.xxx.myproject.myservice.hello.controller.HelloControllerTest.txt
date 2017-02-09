@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.xxx.myproject.myservice.hello.controller.HelloControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.815 sec <<< FAILURE! - in com.xxx.myproject.myservice.hello.controller.HelloControllerTest
+getHello(com.xxx.myproject.myservice.hello.controller.HelloControllerTest)  Time elapsed: 0.129 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:664)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at com.xxx.myproject.myservice.hello.controller.HelloControllerTest.getHello(HelloControllerTest.java:28)
+

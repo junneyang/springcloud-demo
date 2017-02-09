@@ -1,0 +1,18 @@
+server:
+  port: 7777
+spring:
+  application:
+    name: myproject-monitorservice
+security.basic.enabled: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
+  instance:
+    preferIpAddress: true
+turbine:
+  aggregator:
+    clusterConfig: default   
+  appConfig: myproject-myservice,myproject-myservice2
+  clusterNameExpression: new String("default")
+

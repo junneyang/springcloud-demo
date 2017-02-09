@@ -1,0 +1,5 @@
+/opt/java/workspace/myproject-myservice/src/main/java/com/xxx/myproject/myservice/Application.java
+/opt/java/workspace/myproject-myservice/src/main/java/com/xxx/myproject/myservice/user/controller/UserController.java
+/opt/java/workspace/myproject-myservice/src/main/java/com/xxx/myproject/myservice/user/repository/UserRepository.java
+/opt/java/workspace/myproject-myservice/src/main/java/com/xxx/myproject/myservice/user/service/UserService.java
+/opt/java/workspace/myproject-myservice/src/main/java/com/xxx/myproject/myservice/user/domain/User.java

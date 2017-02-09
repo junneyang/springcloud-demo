@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.xxx.myproject.hello.controller.HelloControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.388 sec - in com.xxx.myproject.hello.controller.HelloControllerTest

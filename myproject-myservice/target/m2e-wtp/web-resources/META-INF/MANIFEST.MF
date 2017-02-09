@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: springboot Maven Webapp
+Implementation-Version: 0.5.0-RELEASE
+Built-By: root
+Implementation-Vendor-Id: com.xcloud.demo
+Build-Jdk: 1.8.0_111
+Implementation-URL: http://maven.apache.org
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
